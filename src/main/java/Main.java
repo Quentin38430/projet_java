@@ -6,9 +6,9 @@ public class Main
     public static void main(String[] args)
     {
         // Chemins menant aux différents répertoires
-        String INPUT_PATH  = "../ProjetFinal_v2/inputFiles";
+        String INPUT_PATH = "../ProjetFinal_v2/inputFiles";
         String OUTPUT_PATH = "../ProjetFinal_v2/outputFiles";
-        String ERROR_PATH  = "../ProjetFinal_v2/outputFiles/errors";
+        String ERROR_PATH = "../ProjetFinal_v2/outputFiles/errors";
 
         File folder_in = new File(INPUT_PATH);
 
