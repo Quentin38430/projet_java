@@ -32,10 +32,7 @@ public class MySQLOperations
         {
             e.printStackTrace();
         }
-        finally
-        {
-            return null;
-        }
+        return null;
     }
 
     public void sqlInsert(Connection con, User record) throws SQLException
