@@ -131,23 +131,23 @@ public class CsvFilesOperations
 
     public boolean checkData(CSVRecord record)
     {
-        if(record.get(0).equals(null) || record.get(0) == "" || record.get(0).length() != 13)
+        if(record.get(0) == null || record.get(0).equals("") || record.get(0).length() != 13)
             return false;
-        else if(record.get(1).equals(null) || record.get(1) == "" || record.get(1).length() > 50)
+        else if(record.get(1) == null || record.get(1).equals("") || record.get(1).length() > 50)
             return false;
-        else if(record.get(2).equals(null) || record.get(2) == "" || record.get(2).length() > 50)
+        else if(record.get(2) == null || record.get(2).equals("") || record.get(2).length() > 50)
             return false;
-        else if(record.get(3).equals(null) || record.get(3) == "" || !checkDateFormat(record.get(3)))
+        else if(record.get(3) == null || record.get(3).equals("") || !checkDateFormat(record.get(3)))
             return false;
-        else if(record.get(4).equals(null) || record.get(4) == "" || record.get(4).length() != 10)
+        else if(record.get(4) == null || record.get(4).equals("") || record.get(4).length() != 10)
             return false;
-        else if(record.get(5).equals(null) || record.get(5) == "" || record.get(5).length() > 255)
+        else if(record.get(5) == null || record.get(5).equals("") || record.get(5).length() > 255)
             return false;
-        else if(record.get(6).equals(null) || record.get(6) == "" || parseInt(record.get(6)) < 1)
+        else if(record.get(6) == null || record.get(6).equals("") || parseInt(record.get(6)) < 1)
             return false;
-        else if(record.get(7).equals(null) || record.get(7) == "" || parseInt(record.get(7)) < 1 || parseInt(record.get(7)) > 10)
+        else if(record.get(7) == null || record.get(7).equals("") || parseInt(record.get(7)) < 1 || parseInt(record.get(7)) > 10)
             return false;
-        else if(record.get(8).equals(null) || record.get(8) == "" || record.get(8).length() < 3 || record.get(8).length() > 5)
+        else if(record.get(8) == null || record.get(8).equals("") || record.get(8).length() < 3 || record.get(8).length() > 5)
             return false;
         else
             return true;
